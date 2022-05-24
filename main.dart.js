@@ -23687,19 +23687,22 @@ $.tK().i9(B.b4,q,p,p)}return A.a([A.abs(new A.a1d(o),p,t.z)],t.mp)},
 a1e:function a1e(a){this.a=a},
 a1f:function a1f(){},
 a1d:function a1d(a){this.a=a},
-rM(a,b){var s,r,q,p=a.a
-switch(p){case 0:s=B.H.c6()
+rM(a,b){var s,r,q,p,o,n=a.a
+switch(n){case 0:s=B.H.c6()
 r=B.H.c6()
 q=b===B.M?20:38
-return A.ac(["uuid",s,"element_uuid",r,"type",0,"top",0,"left",0,"width",300,"height",100,"text","New Subheading","color",4278190080,"fontSize",q,"fontWeight",6,"textAlign",2,"fontFamily",A.N6().d,"textType",p],t.N,t.z)
+return A.ac(["uuid",s,"element_uuid",r,"type",0,"top",0,"left",0,"width",300,"height",100,"text","New Subheading","color",4278190080,"fontSize",q,"fontWeight",6,"textAlign",2,"fontFamily",A.N6().d,"textType",n],t.N,t.z)
 case 1:s=B.H.c6()
 r=B.H.c6()
-q=b===B.M?23:33
-return A.ac(["uuid",s,"element_uuid",r,"type",0,"top",0,"left",0,"width",300,"height",100,"text","New BodyText","color",4278190080,"fontSize",q,"fontWeight",3,"textAlign",0,"fontFamily",A.N6().d,"textType",p],t.N,t.z)
+q=b===B.M
+p=q?23:33
+o=A.N6()
+q=q?1.4:1.3
+return A.ac(["uuid",s,"element_uuid",r,"type",0,"top",0,"left",0,"width",300,"height",100,"text","New BodyText","color",4278190080,"fontSize",p,"fontWeight",3,"textAlign",0,"fontFamily",o.d,"textType",n,"lineSpacing",q],t.N,t.z)
 case 2:s=B.H.c6()
 r=B.H.c6()
 q=b===B.M?27:50
-return A.ac(["uuid",s,"element_uuid",r,"type",0,"top",0,"left",0,"width",300,"height",100,"text","New Heading","color",4278190080,"fontSize",q,"fontWeight",6,"textAlign",2,"fontFamily",A.N6().d,"textType",p],t.N,t.z)}},
+return A.ac(["uuid",s,"element_uuid",r,"type",0,"top",0,"left",0,"width",300,"height",100,"text","New Heading","color",4278190080,"fontSize",q,"fontWeight",6,"textAlign",2,"fontFamily",A.N6().d,"textType",n],t.N,t.z)}},
 oY:function oY(a,b){this.a=a
 this.b=b},
 ayP(a,b){return A.ac(["uuid",B.H.c6(),"top",0,"left",0,"type",6,"width",300,"height",200,"png",b,"color",4293651696,"fit",0,"element_uuid",B.H.c6()],t.N,t.X)},
@@ -81647,7 +81650,7 @@ f.l(0,a9,h)
 f.l(0,b0,j.h(0,b1))
 f.l(0,"onTap",0)
 f.l(0,b2,A.aFs(B.M,i))
-g.l(0,"topic",!0)
+f.l(0,"topic",!0)
 A.w2(B.M,f)
 J.dY(p.a(J.E(J.E(J.E(q.y,q.x),A.cU(B.M)),b3)),A.l4(f,o,n))
 e=j.h(0,"description")
@@ -82109,20 +82112,18 @@ $1(a){return J.E(a,"child")==null},
 $S:4}
 A.aeT.prototype={
 $1(a){var s=J.a6(a)
-if(J.e(s.h(a,"topic"),!0))s=(J.e(s.h(a,"onTap"),1)||J.e(s.h(a,"hidden"),!0))&&!0
-else s=!0
-return s},
+return!J.e(s.h(a,"topic"),!0)||J.e(s.h(a,"onTap"),1)||J.e(s.h(a,"hidden"),!0)},
 $S:4}
 A.aeU.prototype={
-$1(a){var s,r=null,q=J.a6(a)
-switch(B.ej[q.h(a,"type")].a){case 0:s=J.e(q.h(a,"textType"),0)?B.wX:B.wY
-return new A.eA(r,s,q.h(a,"text"),r,0)
-case 6:return new A.eA(r,B.cV,r,q.h(a,"png"),0)
-case 1:return new A.eA(r,B.cV,r,r,0)
-case 2:return new A.eA(r,B.cV,r,r,0)
-case 3:return new A.eA(r,B.cV,r,r,0)
-case 4:return new A.eA(r,B.cV,r,r,0)
-case 5:return new A.eA(r,B.cV,r,r,0)}},
+$1(a){var s,r="textType",q=null,p=J.a6(a)
+switch(B.ej[p.h(a,"type")].a){case 0:s=J.e(p.h(a,r),2)||J.e(p.h(a,r),0)?B.wX:B.wY
+return new A.eA(q,s,p.h(a,"text"),q,0)
+case 6:return new A.eA(q,B.cV,q,p.h(a,"png"),0)
+case 1:return new A.eA(q,B.cV,q,q,0)
+case 2:return new A.eA(q,B.cV,q,q,0)
+case 3:return new A.eA(q,B.cV,q,q,0)
+case 4:return new A.eA(q,B.cV,q,q,0)
+case 5:return new A.eA(q,B.cV,q,q,0)}},
 $S:195}
 A.aeX.prototype={
 $1(a){return A.ac(["id",a.a,"readModeElementType",a.b.a,"text",a.c,"imageUrl",a.d,"displayOrder",a.e],t.N,t.z)},
