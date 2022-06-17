@@ -25756,8 +25756,8 @@ aJP(a){if(!B.b.bb(a,"/"))return"/"+a
 return a},
 b1n(a){if(B.b.cH(a,"/"))return B.b.M(a,0,a.length-1)
 return a},
-aRe(){return"http://34.70.92.249"},
-fU(a){var s="http://34.70.92.249"+a
+aRe(){return"http://143.244.138.169"},
+fU(a){var s="http://143.244.138.169"+a
 return s},
 aJw(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null,e=A.h2(f).d
 e.toString
@@ -80732,7 +80732,7 @@ case 1:return A.z(q,r)}})
 return A.A($async$kc,r)}}
 A.Ug.prototype={}
 A.a4j.prototype={
-$0(){return new A.u1(new A.pY(A.aW(t.Gf)),"http://34.70.92.249/folldy_presentation/api/")},
+$0(){return new A.u1(new A.pY(A.aW(t.Gf)),"http://143.244.138.169/folldy_presentation/api/")},
 $S:497}
 A.a4k.prototype={
 $0(){$.aa()
